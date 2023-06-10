@@ -1,0 +1,36 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas: 
+    "header header header"
+    "content1 content2 nav"
+    "footer footer nav" ;
+}
+#green{
+    grid-area: header;
+}
+#yellow{
+    grid-area: content1;
+}
+#red{
+    grid-area: content2;
+}
+#blue{
+    grid-area: nav;
+}
+#orange{
+    grid-area: footer;
+}
+
+section ul{
+    list-style-type: disc;
+    display:inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 4px;
+}
+li{
+    height: 25px;
+    width: 40px;
+}
